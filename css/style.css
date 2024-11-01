@@ -9,6 +9,7 @@
 
 body{
     font-family: "Roboto", sans-serif;
+    background-color: #DCD7C7;
 }
 .navbar{
     background-color: #DCD7C7;
@@ -32,6 +33,11 @@ body{
 .navbar .menu a{
     text-decoration: none;
     color: #181818;
+    cursor:pointer ;
+}
+
+.navbar .menu a:hover{
+    color: white;
 }
 
 .navbar .menu-hamburguesa {
@@ -42,4 +48,126 @@ body{
 
 .navbar .compra {
 grid-column: 8 / 9;
+}
+
+/* SECCION PRINCIPAL */
+
+.todo{
+    height: 80vh;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+}
+.todo .info{
+    grid-column: 7 / 10;
+    grid-row: 3 / 7;
+    color: #181818;
+}
+
+.todo h3{
+font-family: 'Times New Roman', Times, serif;
+font-size: 1.5em;
+font-weight: 300;
+border: #DCD7C7 1px;
+}
+
+.todo h1{
+    font-size: 5em;
+    color:rgb(10, 10, 32);
+    border: #DCD7C7 1px;
+}
+
+.todo p{
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.todo .boton{
+    font-size: 1em;
+    background: none;
+    color: rgb(10, 10, 32) ;
+    padding: 10px 20px;
+    border: 1px solid rgb(10, 10, 32);
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.todo .boton:hover{
+    background-color: #181818;
+    color: #DCD7C7;
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    background-color: #DCD7C7;
+}
+.footer .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.footer .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .grupo-1 .box figure img{
+    width: 150px ;
+    height: 150px;
+}
+.footer .grupo-1 .box h2{
+    color: #181818;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer .grupo-1 .box p{
+    color: black;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #DCD7C7;
+    margin-right: 10px;
+    background-color: #181818;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.footer .grupo-1 .red-social a:hover{
+    color: rgb(4, 0, 255);
+}
+
+.footer .grupo-2{
+    background-color: #181818;
+    padding: 15px 10px;
+    text-align: center;
+    color: #DCD7C7;
+}
+.footer .grupo-2 small{
+    font-size: 15px;
+
+}
+@media screen and (max-width:800px)
+{
+    footer .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
 }
