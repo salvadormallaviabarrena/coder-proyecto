@@ -1,0 +1,17 @@
+@media only screen and (max-width:600px){
+
+
+.navbar {
+position: relative;
+}
+
+.navbar .logo{
+display: none;
+}
+
+
+.navbar .menu-hamburguesa
+display: block;
+grid-column: 8 / 9;
+
+}
